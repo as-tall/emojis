@@ -1,6 +1,6 @@
 <h2>My Emojis</h2>
 <table class="emojis">
-  <tr *ngFor="let emoji of emojis[0] | keyvalue" [class.liked]="emoji.liked==='+'">
+  <tr *ngFor="let emoji of emojis | keyvalue" [class.liked]="emoji.liked==='+'">
     <td><span class="badge">{{emoji.key}}</span></td>
     <td>{{emoji.value}}</td>
     <td>

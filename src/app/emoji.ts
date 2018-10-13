@@ -1,3 +1,3 @@
-export class Emoji {
+export interface Emoji {
     [key:string]:string
 }
