@@ -1,0 +1,15 @@
+<h2>My Emojis</h2>
+<table class="emojis">
+  <tr *ngFor="let emoji of emojis[0] | keyvalue" [class.liked]="emoji.liked==='+'">
+    <td><span class="badge">{{emoji.key}}</span></td>
+    <td>{{emoji.value}}</td>
+    <td>
+      <img src={{emoji.value}}>
+    </td>
+    <td>
+      <!-- <button (click)="onLike(emoji)">like</button> -->
+      <input type="checkbox" name="like" id="like" (change)="onLike(emoji)">
+    </td>
+    <td><button>delete</button></td>
+  </tr>
+</table>
