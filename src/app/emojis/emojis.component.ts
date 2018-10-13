@@ -9,7 +9,7 @@ import { EmojiService } from '../emoji.service';
 })
 export class EmojisComponent implements OnInit {
 
-  emojis: Emoji[];
+  emojis: Emoji;
 
   getEmojis(): void {
     this.emojis = this.emojiService.getEmojis();

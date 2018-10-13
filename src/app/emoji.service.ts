@@ -12,7 +12,7 @@ export class EmojiService {
 
   emojisUrl = 'assets/emojis.json';
 
-  getEmojis(): Emoji[] {
+  getEmojis(): Emoji {
     return EMOJIS;
   }
 
